@@ -94,6 +94,7 @@ public abstract class BaseApi extends ApiConfig implements HttpMethods {
                 .response();
 
         if (isLog) super.log("GET");
+        resetRequest();
         return response;
     }
 
@@ -122,6 +123,7 @@ public abstract class BaseApi extends ApiConfig implements HttpMethods {
                 .response();
 
         if (isLog) super.log("POST");
+        resetRequest();
         return response;
     }
 
@@ -143,6 +145,7 @@ public abstract class BaseApi extends ApiConfig implements HttpMethods {
                 .extract()
                 .response();
         super.log("POST");
+        resetRequest();
         return response;
     }
 
@@ -172,6 +175,7 @@ public abstract class BaseApi extends ApiConfig implements HttpMethods {
                 .response();
 
         super.log("PUT");
+        resetRequest();
         return response;
     }
 
@@ -196,6 +200,7 @@ public abstract class BaseApi extends ApiConfig implements HttpMethods {
                 .response();
 
         super.log("PATCH");
+        resetRequest();
         return response;
     }
 
@@ -217,7 +222,21 @@ public abstract class BaseApi extends ApiConfig implements HttpMethods {
                 .response();
 
         super.log("DELETE");
+        resetRequest();
         return response;
+    }
+
+    protected void resetRequest() {
+        this.body = null;
+        this.cookies.clear();
+        this.cookie = "";
+        this.url = null;
+        this.contentType = null;
+        this.headers.clear();
+        this.pathParams.clear();
+        this.queryParams.clear();
+        this.formParams.clear();
+        this.token = null;
     }
 
     protected void esperar(int sec) {
