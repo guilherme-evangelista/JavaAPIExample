@@ -1,7 +1,7 @@
 # Java API Test Automation Example
 
 [![Automação QA - Execução e Relatório](https://github.com/guilherme-evangelista/JavaAPIExample/actions/workflows/ci.yml/badge.svg)](https://github.com/guilherme-evangelista/JavaAPIExample/actions/workflows/ci.yml)
-[![GitHub Pages](https://img.shields.io/badge/Relatório-Cucumber%20BDD-brightgreen?logo=cucumber)](https://guilherme-evangelista.github.io/JavaAPIExample/)
+[![GitHub Pages](https://img.shields.io/badge/Relatório-Cucumber%20BDD-brightgreen?logo=cucumber)](https://guilherme-evangelista.github.io/java-apitest-example/)
 
 Projeto moderno de automação de testes de API focado em demonstrar boas práticas de engenharia de software e Qualidade (QA), construído inteiramente utilizando **Java**, **REST Assured** e focado na facilidade de negócio através de **Cucumber (BDD)**. Os cenários estão em conformidade e utilizam endpoints baseados nos dados em mocks providos pelo sand-box da [DummyJSON](https://dummyjson.com/).
 
